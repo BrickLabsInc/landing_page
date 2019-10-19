@@ -1,0 +1,530 @@
+/*********************************************
+ * TOP CONTENT
+ *********************************************/
+
+ .bkgrd1 {
+	background-image: linear-gradient(to bottom, #90c8e1, #51a4bf);
+}
+
+.topcontent { 
+	background-position: top; padding:40px 100px;
+}
+
+.logo {
+	width: 94px; margin-bottom: 80px;
+}
+
+.headertext {
+	font-family: Nexa-Heavy;
+  	font-size: 2.9em;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.26;
+  	letter-spacing: normal;
+  	color: #ffffff;
+}
+
+.headertext span {
+	font-family: Nexa-Light; 
+	font-size: .8em; l
+	ine-height: 1; 
+	padding-top: 5px;
+}
+
+.tagline {
+	width: 422px;  
+	height: 18.5px;
+	font-family: Nexa-Bold;  
+	text-transform: uppercase; 
+	font-size: .9em; 
+	font-weight: bold; 
+	font-style: normal; 
+	font-stretch: normal; 
+	line-height: normal; 
+	letter-spacing: 1px; 
+	color: #2f4868;"
+}
+
+.coverphoto {
+	padding: 0;
+}
+
+.button {
+	background-image: linear-gradient(297deg, #e05c58, #ff7e7a);
+    border-radius: 100px !important;
+    font-family: Nexa-Book;
+    color: #ffffff;
+    border: none;
+    margin-left: -232px;
+    height: 60px;
+    margin-top: 10px;
+    padding: 0px 40px;
+}
+
+.emailinput {
+    max-width: 54%;
+    float: left;
+    margin: -12% 75px 50px;
+}
+
+.forminput {
+	border-radius: 100px !important; 
+	height: 80px;
+	border: none;
+    box-shadow: 0 12.5px 14px 0 rgba(54, 76, 105, 0.09);
+    padding-left: 15px;
+    font-family: Nexa-Regular;
+}
+
+input::placeholder {
+  color: #030303 !important;
+  padding-left: 20px;
+  opacity: 1;
+  font-size: 14px;
+}
+
+
+/*********************************************
+ * CALLOUT
+ *********************************************/
+
+.callout {
+	background-image: linear-gradient(179deg, #FBFEFF, #E0F0F6);
+}
+
+.text-callout {
+	font-size: 28px;
+ 	color: #233c5e;
+ 	width: 714px;
+ 	margin: 90px auto 0;
+ 	font-family: Nexa-Book;
+ 	line-height: 50px;
+}
+
+.text-callout span {
+	font-family: Nexa-HeavyItalic;
+}
+
+.houses {
+	max-width: 675px;
+}
+
+.house {
+	max-height: 300px;
+	float: right; 
+	margin-top: -25px;
+}
+
+.calloutheadertext {
+	color: #1e3655;
+	font-size: 47px;
+	font-family: Nexa-Bold;
+	margin: 100px 0px 50px;
+}
+
+.calloutlabel {
+	color: #f26960;
+	font-size: 20px;
+	font-family: Nexa-Bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/*********************************************
+ * HOW DOES BRICK WORK
+ *********************************************/
+
+.findlogo, .financelogo, .managelogo {
+	height: 25px;
+	float: left;
+}
+
+.findfinancemanage {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.find {
+	max-width: 95px;
+	margin: 0 auto 20px;
+}
+
+.finance {
+	max-width: 145px;
+	margin: 0 auto 20px;
+}
+
+.manage {
+	max-width: 150px;
+	margin: 0 auto 20px;
+}
+
+
+.callouttext {
+	color: #1e3655;
+	font-size: 17px;
+	font-family: Nexa-Book;
+	text-align: center;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.findtext {
+	max-width: 270px;
+}
+
+.managetext {
+	max-width: 270px;
+}
+
+/*********************************************
+ * EMAIL
+ *********************************************/
+
+.emailsignup {
+	background-image: linear-gradient(to bottom, #90c8e1, #51a4bf);
+	padding: 90px;
+}
+
+.emailtext {
+	color: #1e3655;
+	font-size: 28px;
+	font-family: Nexa-Bold;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.footeremailinput {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+/*********************************************
+ * FOOTER
+ *********************************************/
+
+.footer {
+	background-image: linear-gradient(to bottom, #3a5371, #112848);
+	padding: 50px 100px 10px;
+}
+
+.footerlogo {
+	max-width: 400px;
+}
+
+.footerlogoicon {
+	max-width: 352px;
+	margin-top: 50px;
+}
+
+.footerheadline {
+	color: #b1d8e8;font-size: 19px;font-family: Nexa-Bold;
+}
+
+.footertext {
+	font-family: Nexa-Book;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.footerbrick {
+	max-width: 150px;
+	margin-left: 40px;
+}
+
+.footerblog {
+	margin-left: 30px;
+}
+
+.footersocial {
+	max-width: 200px;
+}
+
+.facebook {
+	max-height: 20px;
+	margin-left: 35px;
+}
+
+.twitter{
+	max-height: 16px;
+	margin-left: 35px;
+}
+
+.medium {
+	max-height: 18px;
+	margin-left: 35px;
+}
+
+.footerborder {
+	border-top: 1px solid #445871;
+	margin-top: 30px;
+}
+
+.copyrighttext {
+	font-family: Nexa-Book;
+	font-size: 12px;
+	color: #ffffff;
+	padding-top: 30px;
+}
+
+.textcenter {
+	text-align: center;
+	margin-left: 20px;
+	color: #ffffff;
+}
+
+/*********************************************
+ * MEDIA QUERIES
+ *********************************************/
+
+@media only screen and (max-width: 1439px) {
+
+	.headertext {
+		font-size: 2.4em;
+	}
+
+	.footerlogo {
+		flex: none;
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto 40px;
+	}
+
+	.footerlogoicon {
+		margin: 0 auto;
+	}
+
+	.copyrighttext {
+		margin: 0 auto 20px;
+		text-align: center;
+	}
+
+	.footer {
+	    padding: 20px;
+	    text-align: center;
+	    margin: 0 auto;
+	}
+
+	.footerlogoicon {
+	    max-width: 252px;
+	    margin: 20px auto 0px;
+
+	}
+
+	.footerbrick, .footerblog, .footersocial {
+	 	max-width: 100%;
+	 	margin: 0 auto;
+	 	text-align: center;
+	}
+
+	.footerlogo {
+		max-width: 100%;
+		margin: 0 auto 20px;
+	}
+
+	.textcenter {
+		margin: 0;
+		padding: 0 ;
+	}
+
+	.footerheadline {
+		margin-top: 20px;
+	}
+
+	.facebook, .medium, .twitter {
+		margin: 15px;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.headertext {
+			font-size: 2.2em;
+	}
+	
+	.tagline {
+		font-size: .7em;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	
+    .topcontent {
+		 padding: 40px 60px;
+	}
+
+	.emailinput {
+    	margin: -12% 40px 0;
+    }
+
+	.logo {
+	    width: 70px;
+	    margin-bottom: 40px;
+	}
+
+	.forminput {
+		height: 60px;
+	}
+
+	.button {
+		height: 40px;
+		font-size: 13px;
+		margin-left: -210px;
+	}
+
+	.headertext {
+		font-size: 2em;
+	}
+
+	.tagline { 
+		font-size: .7em;
+	}
+
+	.house { 
+		margin-top: -5px;
+	}
+
+	.text-callout {
+	    font-size: 22px;
+	    line-height: 40px;
+	    margin: 50px auto 0;
+	}
+
+	.footerlogoicon {
+	    max-width: 252px;
+	}
+
+	.footer {
+	    padding: 50px 60px 10px;
+	}
+
+	input::placeholder {
+	  font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+
+	.calloutheadertext {
+	    font-size: 32px;
+	    margin: 40px 0px 0px;
+	}
+
+	.calloutlabel {
+		margin-top: 40px;
+		font-size: 16px;
+	}
+
+	.houses {
+	    max-width: 100%;
+	    margin-top: 40px;
+	    margin-left: -15px;
+	}
+
+	.text-callout {
+		max-width: 90%;
+	}
+
+	.headertext {
+		font-size: 1.7em;
+	}
+
+	.tagline {
+		font-size: .6em;
+	}
+}
+
+
+@media only screen and (max-width: 830px) {
+	.coverphoto {
+	    overflow: hidden;
+	}
+
+	.headertext {
+		font-size: 1.4em;
+	}
+
+	.emailinput {
+	    max-width: 90%;
+	    float: left;
+	    margin: -30% auto 0px;
+	}
+
+	.photohouses {
+		margin-top: -170px;
+	}
+
+	.topcontent {
+		width: 100%;
+		max-width: 100%;
+		flex: none;
+	}
+
+	.coverphoto {
+		flex: none;
+		width: 100%;
+		max-width: 100%;
+		max-height: 200px;
+		margin-top: -10px;
+	}
+
+	.headertext { 
+		text-align: center;
+		font-size: 2em;
+	}
+
+	.tagline {
+		font-size: .7em;
+		text-align: center;
+		margin: 10px auto 30px;
+		max-width: 90%;
+	}
+
+	.logo {
+    	width: 70px;
+    	margin-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+
+	.emailinput {
+    	max-width: 90%;
+    	float: left;
+    	margin: -50% auto 0px;
+	}
+
+	.text-callout {
+    	font-size: 16px;
+    	line-height: 30px;
+    	margin: 50px auto 0;
+	}
+
+	.house {
+	    margin-top: 5px;
+	}
+
+	.row {
+		margin: 0;
+	}
+
+	.emailsignup {
+		padding: 20px;
+	}
+
+	.button {
+		padding: 0 20px;
+	    margin-left: -175px;
+	    font-size: 14px;
+	}
+
+	.forminput {
+		padding:0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+
+}

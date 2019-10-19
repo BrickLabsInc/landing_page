@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Nexa-HeavyItalic';
+	src: url(../../assets/fonts/3A4A07_7_0.eot) format('embedded-opentype'),
+	url(../../assets/fonts/3A4A07_7_0.eot) format('embedded-opentype'),
+	url(../../assets/fonts/3A4A07_7_0.woff2) format('woff2'),
+	url(../../assets/fonts/3A4A07_7_0.woff) format('woff'),
+	url(../../assets/fonts/3A4A07_7_0.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}

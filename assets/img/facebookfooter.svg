@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="41px" viewBox="0 0 20 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="brick" transform="translate(-2431.000000, -4243.000000)" fill="#B0D8E7">
+            <g id="Footer" transform="translate(-2.000000, 3991.000000)">
+                <g id="Group-18">
+                    <g id="Footer-Copy" transform="translate(4.000000, 107.440000)">
+                        <g id="Social" transform="translate(2396.000000, 0.560000)">
+                            <g id="facebook" transform="translate(0.000000, 117.808619)">
+                                <g id="Group-8" transform="translate(33.000000, 26.000000)">
+                                    <path d="M12.9904173,40.9226894 L4.51406754,40.9226894 L4.51406754,20.9347758 L0.278482414,20.9347758 L0.278482414,14.0476113 L4.51406754,14.0476113 L4.51406754,9.91278989 C4.51406754,4.29457917 6.90443444,0.951907771 13.700017,0.951907771 L19.3560965,0.951907771 L19.3560965,7.84159501 L15.8210468,7.84159501 C13.1755866,7.84159501 13.0007765,8.80403209 13.0007765,10.6002449 L12.9891224,14.0476113 L19.3949432,14.0476113 L18.6452019,20.9347758 L12.9891224,20.9347758 L12.9891224,40.9226894 L12.9904173,40.9226894 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
