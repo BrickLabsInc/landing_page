@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
     <link rel="stylesheet" href="assets/css/styles.css"
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
    
 </head>
 
@@ -42,17 +43,19 @@
                 <img class="img-fluid flex-grow-1 photohouses" src="assets/img/coverphoto.jpg">
             </div>
         </div>
+        <form action="https://formspree.io/mnqaaabl" method="POST">
         <div class="row">
             <div class="col-md-12 emailinput">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control forminput" placeholder="Enter Your Email Address" aria-label="Recipient's username" aria-describedby="button-addon2"> 
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary button" type="button" id="button-addon2">Become an Owner
-                        </button>
-                    </div>
+                    <input type="email" name="_replyto" class="form-control forminput" placeholder="Please Enter Your Email Address" aria-label="Recipient's username" aria-describedby="button-addon2"> 
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary button" type="submit" value="send" id="button-addon2">Become an Owner
+                    </button>
+                </div>
                 </div>
             </div>
         </div>
+        </form>
     </div>
 
     <div class="callout">
@@ -145,8 +148,9 @@
         <p class="copyrighttext">© 2019 Brick Labs, Inc.</p>
     </div>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 
