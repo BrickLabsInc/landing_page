@@ -223,11 +223,12 @@ input::placeholder {
 	color: #b1d8e8;font-size: 19px;font-family: Nexa-Bold;
 }
 
-.footertext {
+.footertext, .footertext a {
 	font-family: Nexa-Book;
 	font-size: 14px;
 	color: #ffffff;
 }
+
 
 .footerbrick {
 	max-width: 150px;
