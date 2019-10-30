@@ -55,10 +55,14 @@
     font-family: Nexa-Book;
     color: #ffffff;
     border: none;
-    margin-left: -232px;
     height: 60px;
     margin-top: 10px;
     padding: 0px 40px;
+}
+
+.input-group-append {
+    margin-left: -232px;
+    z-index: 9000;
 }
 
 .emailinput {
@@ -372,7 +376,6 @@ input::placeholder {
 	.button {
 		height: 40px;
 		font-size: 13px;
-		margin-left: -210px;
 	}
 
 	.headertext {
