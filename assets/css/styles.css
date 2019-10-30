@@ -61,8 +61,9 @@
 }
 
 .buttondiv {
-	margin-left: -232px;
+    padding-right: 15px;
 }
+
 .input-group-append {
     z-index: 9000;
 }
@@ -80,6 +81,7 @@
     box-shadow: 0 12.5px 14px 0 rgba(54, 76, 105, 0.09);
     padding-left: 15px;
     font-family: Nexa-Regular;
+    background: #ffffff;
 }
 
 input::placeholder {
@@ -496,9 +498,6 @@ input::placeholder {
 
 @media only screen and (max-width: 620px) {
 
-	.buttondiv {
-	margin-left: 0;
-}
 	.emailinput {
     	max-width: 90%;
     	float: left;
