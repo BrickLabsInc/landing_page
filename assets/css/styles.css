@@ -55,10 +55,17 @@
     font-family: Nexa-Book;
     color: #ffffff;
     border: none;
-    margin-left: -232px;
     height: 60px;
     margin-top: 10px;
     padding: 0px 40px;
+}
+
+.buttondiv {
+    padding-right: 15px;
+}
+
+.input-group-append {
+    z-index: 9000;
 }
 
 .emailinput {
@@ -74,6 +81,7 @@
     box-shadow: 0 12.5px 14px 0 rgba(54, 76, 105, 0.09);
     padding-left: 15px;
     font-family: Nexa-Regular;
+    background: #ffffff;
 }
 
 input::placeholder {
@@ -223,11 +231,12 @@ input::placeholder {
 	color: #b1d8e8;font-size: 19px;font-family: Nexa-Bold;
 }
 
-.footertext {
+.footertext, .footertext a {
 	font-family: Nexa-Book;
 	font-size: 14px;
 	color: #ffffff;
 }
+
 
 .footerbrick {
 	max-width: 150px;
@@ -371,7 +380,6 @@ input::placeholder {
 	.button {
 		height: 40px;
 		font-size: 13px;
-		margin-left: -210px;
 	}
 
 	.headertext {
@@ -526,5 +534,6 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 500px) {
+
 
 }
