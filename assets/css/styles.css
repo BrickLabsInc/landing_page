@@ -466,11 +466,26 @@ display: block;
 @media only screen and (max-width: 768px) {
 	.houses {margin-top:430px;}
 .headertextbox {
-	width: 400px;
-    margin: 0 auto;
+	margin: 0 auto 50px;
     position: relative;
-    margin-top: -300px;
+    margin-top: -45%;
     height: 350px;
+}.headertext {
+	font-size: 26px; 
+
+}
+.headertext span {
+	font-size: 18px; 
+}
+
+.tagline { 
+	font-size: .7em;
+}
+
+.buttonred {
+    width: 200px;
+    margin: 0px;
+    font-size: 12px;
 }
 }
 
@@ -491,9 +506,13 @@ display: block;
 }
 
 .headertextbox {
-	margin: -90px auto;
 	max-width: 350px;
 
+}
+
+.shownow {
+	display: none;
+}
 }
 
 /*@media only screen and (max-width: 1439px) {
