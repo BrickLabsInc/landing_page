@@ -8,9 +8,11 @@
     z-index: 9000;
     background: #ffffff;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.098) 0px 1px 6px -1px;
 }
 
+.active {
+    box-shadow: rgba(0, 0, 0, 0.098) 0px 1px 6px -1px;
+}
  .bkgrd1 {
 	background-image: linear-gradient(to bottom, #F1F7FA, #DFEEF5);
 	max-height: 580px;
@@ -29,20 +31,70 @@
 }
 
 .sociallinks {
-	margin: 15px 80px;
+	margin-right: 80px;
+	float: right;
+}
+
+.sociallinks li {
+	float: left;
+	margin-left: 30px;
+	list-style-image: none;
+	list-style-type: none;
+}
+
+.navbar-nav {
+	display: block;
+	margin-top:25px;
+}
+
+.twitter{
+	height: 16px;
+	display: block;
+}
+
+.nav-item:hover {
+	opacity: .8;
+}
+
+.medium{
+	height: 16px;
+	display: block;
+}
+
+.show {
+	display: none;
+}
+.shownow {
+	display: block;
+	margin-top: 4px;
+}
+
+.navlink {
+color: #55A6C1;
+    font-size: 14px;
+    font-family: Nexa-Bold;
+}
+
+a.navlink:hover {
+	text-decoration: none;
+color: #55A6C1;
+}
+
+a.medium:hover {
+		background-image: url("../img/mediumhover.svg");
+
 }
 
 .headertextbox {
 	background-color: #ffffff;
-	width: 550px;
 	z-index: 5000;
 	position: absolute;
-	margin: 80px 100px;
-	padding: 50px;
+	margin: 4% 100px;
+	padding: 50px 80px 60px;
 }
 .headertext {
 	font-family: Nexa-Heavy;
-  	font-size: 41px;
+  	font-size: 36px;
   	font-style: normal;
   	font-stretch: normal;
   	letter-spacing: normal;
@@ -53,7 +105,7 @@
 
 .headertext span {
 	font-family: Nexa-Light; 
-	font-size: 29px; 
+	font-size: 26px; 
 	padding-top: 5px;
 }
 
@@ -72,6 +124,7 @@
 	margin-top: 30px;
 }
 
+
 .coverphoto {
 	padding: 0;
 	max-height: 580px;
@@ -84,8 +137,16 @@
 	margin-top: -77px;
 }
 
+div.a {
+	margin: 0 auto;
+}
+
+a.buttonlink {
+text-decoration: none;
+}
+
 .buttonred {
-	background-image: linear-gradient(297deg, #e05c58, #ff7e7a);
+	background-image: linear-gradient(297deg, #e05c58, #F16F6B);
     border-radius: 100px !important;
     font-family: Nexa-Book;
     color: #ffffff;
@@ -95,8 +156,11 @@
     padding: 18px;
     width: 350px;
     text-align: center;
+    display: block;
 }
-
+a.buttonred:hover {
+	background-image: linear-gradient(297deg, #F16F6B, #F16F6B);
+}
 .buttondiv {
     padding-right: 15px;
 }
@@ -135,16 +199,20 @@ input::placeholder {
 
 .callout {
 	background-image: linear-gradient(179deg, #F5FBFE, #E0F0F6);
-	margin-top: 50px;
+	margin-top: 100px;
+}
+
+.houses {
+	margin: 250px -15px 0;
 }
 
 .calloutbox {
 	max-width: 684px;
 	background: #ffffff;
-	margin: 50px 150px;
+	margin: 90px;
     position: absolute;
     padding: 50px;
-
+    box-shadow: rgba(0, 0, 0, 0.098) 0px 1px 6px -1px;
 }
 
 .text-callout {
@@ -173,7 +241,7 @@ input::placeholder {
 
 .callouttitle {
 	color: #55A6C1;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: Nexa-XBold;
 	margin: 0px;
 	text-transform: uppercase;
@@ -221,22 +289,24 @@ input::placeholder {
 	text-align: left;
 	line-height: 3;
 	list-style: none;
+	padding: 0;
 }
 
 
 
-li.managelogo {
-list-style-image: url('../img/managelogo.svg');
-padding-left: 20px;
-}
-li.financelogo {
-list-style-image: url('../img/financelogo.svg');
-padding-left: 20px;
+.managelogo {
+height: 24px;
+margin-right: 20px;
 }
 
-li.findlogo {
-list-style-image: url('../img/findlogo.svg');
-padding-left: 20px;
+.financelogo {
+height: 24px;
+margin-right: 20px;
+}
+
+.findlogo {
+height: 25px;
+margin-right: 20px;
 }
 
 .homegoals {
@@ -264,9 +334,6 @@ display: block;
 	max-width: 1140px;
 	margin: 0 auto;
 }
-
-
-
 
 
 .findtext {
@@ -311,66 +378,21 @@ display: block;
 
 .footer {
 	background-image: linear-gradient(to bottom, #3a5371, #112848);
-	padding: 50px 100px 10px;
-}
-
-.footerlogo {
-	max-width: 400px;
+	padding: 20px 80px;
 }
 
 .footerlogoicon {
-	max-width: 352px;
-	margin-top: 50px;
-}
-
-.footerheadline {
-	color: #b1d8e8;font-size: 19px;font-family: Nexa-Bold;
-}
-
-.footertext, .footertext a {
-	font-family: Nexa-Book;
-	font-size: 14px;
-	color: #ffffff;
-}
-
-
-.footerbrick {
-	max-width: 150px;
-	margin-left: 40px;
-}
-
-.footerblog {
-	margin-left: 30px;
-}
-
-.footersocial {
-	max-width: 200px;
-}
-
-.facebook {
-	max-height: 20px;
-	margin-left: 35px;
-}
-
-.twitter{
-	max-height: 16px;
-}
-
-.medium {
-	max-height: 18px;
-	margin-right: 30px;
-	}
-
-.footerborder {
-	border-top: 1px solid #445871;
+	max-width: 250px;
 	margin-top: 30px;
 }
 
 .copyrighttext {
 	font-family: Nexa-Book;
 	font-size: 12px;
-	color: #ffffff;
-	padding-top: 30px;
+	color: #8294A7;
+	float: right;
+	text-align: right;
+	width: 100%;
 }
 
 .textcenter {
@@ -382,8 +404,91 @@ display: block;
 /*********************************************
  * MEDIA QUERIES
  *********************************************/
+@media only screen and (max-width: 1200px) {
+	.headertextbox {
+    padding: 30px 50px 40px;
+}
+.headertext {
+	font-size: 30px; 
 
-@media only screen and (max-width: 1439px) {
+}
+.headertext span {
+	font-size: 22px; 
+}
+
+.tagline { 
+	font-size: .8em;
+}
+
+.buttonred {
+    height: 50px;
+    width: 300px;
+    margin: 30px auto 0px !important;
+    font-size: 15px;
+}
+.houses {
+	margin-top: 300px;
+}
+
+
+}
+
+@media only screen and (max-width: 960px) {
+.calloutbox {
+    position: relative;
+    max-width: 444px;
+    margin: 0 auto;
+    margin-top: -520px;
+    height: 470px;
+}
+
+
+.investmentheadertext {
+	font-size: 36px;
+	max-width: 300px;
+}
+
+.investmenttext {
+	font-size: 20px;
+	max-width: 350px;
+}
+
+.investmenttextbullet {
+	font-size: 14px;
+}
+.callouttext {
+	margin-bottom: 50px;
+}
+.footerlogoicon {
+    max-width: 180px;
+    }
+}
+@media only screen and (max-width: 768px) {
+	.houses {margin-top:430px;}
+.headertextbox {
+	width: 400px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -300px;
+    height: 350px;
+}
+}
+
+@media only screen and (max-width: 620px) {
+	.logo {
+    	width: 70px;
+	margin: 25px 40px;
+	}
+
+	.sociallinks {
+	margin-right: 40px;
+	float: right;
+}
+}
+
+
+
+/*@media only screen and (max-width: 1439px) {
 
 	.headertext {
 		font-size: 2.4em;
@@ -520,11 +625,6 @@ display: block;
 		font-size: 16px;
 	}
 
-	.houses {
-	    max-width: 100%;
-	    margin-top: 40px;
-	    margin-left: -15px;
-	}
 
 	.text-callout {
 		max-width: 90%;
