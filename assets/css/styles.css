@@ -525,7 +525,7 @@ display: block;
 	margin-top: 0;
 }
 .findlogo, .financelogo, .managelogo {
-	margin-right: 5px;
+	margin-right: 10px;
 }
 .calloutbox {
 	width: 100%;
@@ -543,6 +543,8 @@ display: block;
     .footerlogoicon {
     	max-width: 250px;
     }
+    .investmenttextbullet {
+    font-size: 12px;}
 }
 
 /*@media only screen and (max-width: 1439px) {
