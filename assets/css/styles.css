@@ -464,7 +464,11 @@ display: block;
     }
 }
 @media only screen and (max-width: 768px) {
-	.houses {margin-top:430px;}
+	.houses {margin-top:430px;
+		max-width: 100%;
+	}
+
+
 .headertextbox {
 	margin: 0 auto 50px;
     position: relative;
