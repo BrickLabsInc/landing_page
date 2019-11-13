@@ -490,6 +490,11 @@ display: block;
     margin: 0px;
     font-size: 12px;
 }
+
+.toprow {
+	margin: 0;
+}
+
 }
 
 @media only screen and (max-width: 620px) {
@@ -516,6 +521,28 @@ display: block;
 .shownow {
 	display: none;
 }
+.callout {
+	margin-top: 0;
+}
+.findlogo, .financelogo, .managelogo {
+	margin-right: 5px;
+}
+.calloutbox {
+	width: 100%;
+	box-shadow: none;
+	margin: 0;
+	background: none;
+}
+.copyrighttext {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 21px;
+    }
+
+    .footerlogoicon {
+    	max-width: 250px;
+    }
 }
 
 /*@media only screen and (max-width: 1439px) {
