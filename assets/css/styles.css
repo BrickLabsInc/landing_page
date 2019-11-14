@@ -1,38 +1,115 @@
 /*********************************************
  * TOP CONTENT
  *********************************************/
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background: #ffffff;
+    width: 100%;
+}
 
+.active {
+    box-shadow: rgba(0, 0, 0, 0.098) 0px 1px 6px -1px;
+}
  .bkgrd1 {
-	background-image: linear-gradient(to bottom, #90c8e1, #51a4bf);
+	background-image: linear-gradient(to bottom, #F1F7FA, #DFEEF5);
+	max-height: 580px;
+    margin-top: 75px;
 }
 
 .topcontent { 
-	background-position: top; padding:40px 100px;
+	background: #ffffff;
+	width: 200px;
+
 }
 
 .logo {
-	width: 94px; margin-bottom: 80px;
+	width: 90px;
+	margin: 25px 80px;
 }
 
+.sociallinks {
+	margin-right: 80px;
+	float: right;
+}
+
+.sociallinks li {
+	float: left;
+	margin-left: 30px;
+	list-style-image: none;
+	list-style-type: none;
+}
+
+.navbar-nav {
+	display: block;
+	margin-top:25px;
+}
+
+.twitter{
+	height: 16px;
+	display: block;
+}
+
+.nav-item:hover {
+	opacity: .8;
+}
+
+.medium{
+	height: 16px;
+	display: block;
+}
+
+.show {
+	display: none;
+}
+.shownow {
+	display: block;
+	margin-top: 4px;
+}
+
+.navlink {
+color: #55A6C1;
+    font-size: 14px;
+    font-family: Nexa-Bold;
+}
+
+a.navlink:hover {
+	text-decoration: none;
+color: #55A6C1;
+}
+
+a.medium:hover {
+		background-image: url("../img/mediumhover.svg");
+
+}
+
+.headertextbox {
+	background-color: #ffffff;
+	z-index: 5000;
+	position: absolute;
+	margin: 4% 100px;
+	padding: 50px 80px 60px;
+}
 .headertext {
 	font-family: Nexa-Heavy;
-  	font-size: 2.9em;
+  	font-size: 36px;
   	font-style: normal;
   	font-stretch: normal;
-  	line-height: 1.26;
   	letter-spacing: normal;
-  	color: #ffffff;
+  	color: #202D3B;
+  	line-height: 1.25;
+  	text-align: center;
 }
 
 .headertext span {
 	font-family: Nexa-Light; 
-	font-size: .8em; l
-	ine-height: 1; 
+	font-size: 26px; 
 	padding-top: 5px;
 }
 
-.tagline {
-	width: 422px;  
+.tagline { 
 	height: 18.5px;
 	font-family: Nexa-Bold;  
 	text-transform: uppercase; 
@@ -42,24 +119,48 @@
 	font-stretch: normal; 
 	line-height: normal; 
 	letter-spacing: 1px; 
-	color: #2f4868;"
+	color: #202D3B;
+	text-align: center;
+	margin-top: 30px;
 }
+
 
 .coverphoto {
 	padding: 0;
+	max-height: 580px;
+	overflow: hidden;
 }
 
-.button {
-	background-image: linear-gradient(297deg, #e05c58, #ff7e7a);
+.photohouses {
+	float: right;
+	overflow: hidden;
+	margin-top: -77px;
+}
+
+div.a {
+	margin: 0 auto;
+}
+
+a.buttonlink {
+text-decoration: none;
+}
+
+.buttonred {
+	background-image: linear-gradient(297deg, #e05c58, #F16F6B);
     border-radius: 100px !important;
     font-family: Nexa-Book;
     color: #ffffff;
     border: none;
     height: 60px;
-    margin-top: 10px;
-    padding: 0px 40px;
+    margin: 40px auto 0px !important;
+    padding: 18px;
+    width: 350px;
+    text-align: center;
+    display: block;
 }
-
+a.buttonred:hover {
+	background-image: linear-gradient(297deg, #F16F6B, #F16F6B);
+}
 .buttondiv {
     padding-right: 15px;
 }
@@ -97,7 +198,21 @@ input::placeholder {
  *********************************************/
 
 .callout {
-	background-image: linear-gradient(179deg, #FBFEFF, #E0F0F6);
+	background-image: linear-gradient(179deg, #F5FBFE, #E0F0F6);
+	margin-top: 100px;
+}
+
+.houses {
+	margin: 250px -15px 0;
+}
+
+.calloutbox {
+	max-width: 684px;
+	background: #ffffff;
+	margin: 90px;
+    position: absolute;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.098) 0px 1px 6px -1px;
 }
 
 .text-callout {
@@ -113,76 +228,124 @@ input::placeholder {
 	font-family: Nexa-HeavyItalic;
 }
 
-.houses {
-	max-width: 675px;
-}
-
 .house {
-	max-height: 300px;
 	float: right; 
-	margin-top: -25px;
 }
 
 .calloutheadertext {
-	color: #1e3655;
-	font-size: 47px;
+	color: #202D3B;
+	font-size: 35px;
 	font-family: Nexa-Bold;
-	margin: 100px 0px 50px;
+	margin-bottom: 50px;
+}
+
+.callouttitle {
+	color: #55A6C1;
+	font-size: 16px;
+	font-family: Nexa-XBold;
+	margin: 0px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 100px 0px 10px;
 }
 
 .calloutlabel {
-	color: #f26960;
-	font-size: 20px;
+	color: #202D3B;
+	font-size: 23px;
 	font-family: Nexa-Bold;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	margin-top: 30px;
+	margin-bottom: 7px;
 }
-
+.callouttext {
+	color: #202D3B;
+	font-size: 16px;
+	font-family: Nexa-Book;
+	text-align: center;
+	margin: 0 auto;
+    line-height: 1.8;
+}
 /*********************************************
  * HOW DOES BRICK WORK
  *********************************************/
-
-.findlogo, .financelogo, .managelogo {
-	height: 25px;
-	float: left;
+.investmentheadertext {
+	color: #202D3B;
+	font-size: 35px;
+	font-family: Nexa-Bold;
+	text-align: left;
 }
+
+.investmenttext {
+	color: #202D3B;
+	font-size: 25px;
+	font-family: Nexa-Light;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.investmenttextbullet {
+	color: #202D3B;
+	font-size: 18px;
+	font-family: Nexa-Bold;
+	text-align: left;
+	line-height: 3;
+	list-style: none;
+	padding: 0;
+}
+
+
+
+.managelogo {
+height: 24px;
+margin-right: 20px;
+}
+
+.financelogo {
+height: 24px;
+margin-right: 20px;
+}
+
+.findlogo {
+height: 25px;
+margin-right: 20px;
+}
+
+.homegoals {
+height: 230px;
+margin: 0 auto;
+display: block;
+}
+
+.plan {
+
+height: 230px;
+margin: 0 auto;
+display: block;
+}
+
+.learn {
+
+height: 230px;
+margin: 0 auto;
+display: block;
+}
+
 
 .findfinancemanage {
-	max-width: 1100px;
+	max-width: 1140px;
 	margin: 0 auto;
 }
 
-.find {
-	max-width: 95px;
-	margin: 0 auto 20px;
-}
-
-.finance {
-	max-width: 145px;
-	margin: 0 auto 20px;
-}
-
-.manage {
-	max-width: 150px;
-	margin: 0 auto 20px;
-}
-
-
-.callouttext {
-	color: #1e3655;
-	font-size: 17px;
-	font-family: Nexa-Book;
-	text-align: center;
-	max-width: 300px;
-	margin: 0 auto;
-}
 
 .findtext {
-	max-width: 270px;
+	max-width: 300px;
+}
+
+.financetext {
+	max-width: 300px;
 }
 
 .managetext {
-	max-width: 270px;
+	max-width: 361px;
 }
 
 /*********************************************
@@ -215,67 +378,21 @@ input::placeholder {
 
 .footer {
 	background-image: linear-gradient(to bottom, #3a5371, #112848);
-	padding: 50px 100px 10px;
-}
-
-.footerlogo {
-	max-width: 400px;
+	padding: 20px 80px;
 }
 
 .footerlogoicon {
-	max-width: 352px;
-	margin-top: 50px;
-}
-
-.footerheadline {
-	color: #b1d8e8;font-size: 19px;font-family: Nexa-Bold;
-}
-
-.footertext, .footertext a {
-	font-family: Nexa-Book;
-	font-size: 14px;
-	color: #ffffff;
-}
-
-
-.footerbrick {
-	max-width: 150px;
-	margin-left: 40px;
-}
-
-.footerblog {
-	margin-left: 30px;
-}
-
-.footersocial {
-	max-width: 200px;
-}
-
-.facebook {
-	max-height: 20px;
-	margin-left: 35px;
-}
-
-.twitter{
-	max-height: 16px;
-	margin-left: 35px;
-}
-
-.medium {
-	max-height: 18px;
-	margin-left: 35px;
-}
-
-.footerborder {
-	border-top: 1px solid #445871;
+	max-width: 250px;
 	margin-top: 30px;
 }
 
 .copyrighttext {
 	font-family: Nexa-Book;
 	font-size: 12px;
-	color: #ffffff;
-	padding-top: 30px;
+	color: #8294A7;
+	float: right;
+	text-align: right;
+	width: 100%;
 }
 
 .textcenter {
@@ -287,8 +404,150 @@ input::placeholder {
 /*********************************************
  * MEDIA QUERIES
  *********************************************/
+@media only screen and (max-width: 1200px) {
+	.headertextbox {
+    padding: 30px 50px 40px;
+}
+.headertext {
+	font-size: 30px; 
 
-@media only screen and (max-width: 1439px) {
+}
+.headertext span {
+	font-size: 22px; 
+}
+
+.tagline { 
+	font-size: .8em;
+}
+
+.buttonred {
+    height: 50px;
+    width: 300px;
+    margin: 30px auto 0px !important;
+    font-size: 15px;
+}
+.houses {
+	margin-top: 300px;
+}
+
+
+}
+
+@media only screen and (max-width: 960px) {
+.calloutbox {
+    position: relative;
+    max-width: 444px;
+    margin: 0 auto;
+    margin-top: -520px;
+    height: 470px;
+}
+
+
+.investmentheadertext {
+	font-size: 36px;
+	max-width: 300px;
+}
+
+.investmenttext {
+	font-size: 20px;
+	max-width: 350px;
+}
+
+.investmenttextbullet {
+	font-size: 14px;
+}
+.callouttext {
+	margin-bottom: 50px;
+}
+.footerlogoicon {
+    max-width: 180px;
+    }
+}
+@media only screen and (max-width: 768px) {
+	.houses {display: none;
+	}
+
+
+.headertextbox {
+	margin: 0 auto 50px;
+    position: relative;
+    margin-top: -45%;
+    height: 350px;
+}.headertext {
+	font-size: 26px; 
+
+}
+.headertext span {
+	font-size: 18px; 
+}
+
+.tagline { 
+	font-size: .7em;
+}
+
+.buttonred {
+    width: 200px;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.toprow {
+	margin: 0;
+}
+
+}
+
+@media only screen and (max-width: 620px) {
+	.logo {
+    	width: 60px;
+	margin: 25px 30px;
+	}
+
+	.sociallinks {
+	margin-right:30px;
+	float: right;
+}
+.calloutheadertext {
+    font-size: 32px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.headertextbox {
+	max-width: 350px;
+
+}
+
+.shownow {
+	display: none;
+}
+.callout {
+	margin-top: 0;
+}
+.findlogo, .financelogo, .managelogo {
+	margin-right: 10px;
+}
+.calloutbox {
+	width: 100%;
+	box-shadow: none;
+	margin: 0;
+	background: none;
+}
+.copyrighttext {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 21px;
+    }
+
+    .footerlogoicon {
+    	max-width: 250px;
+    }
+    .investmenttextbullet {
+    font-size: 12px;}
+}
+
+/*@media only screen and (max-width: 1439px) {
 
 	.headertext {
 		font-size: 2.4em;
@@ -425,11 +684,6 @@ input::placeholder {
 		font-size: 16px;
 	}
 
-	.houses {
-	    max-width: 100%;
-	    margin-top: 40px;
-	    margin-left: -15px;
-	}
 
 	.text-callout {
 		max-width: 90%;
@@ -462,6 +716,7 @@ input::placeholder {
 
 	.photohouses {
 		margin-top: -170px;
+		max-height: 580px;
 	}
 
 	.topcontent {
