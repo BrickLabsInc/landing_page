@@ -73,25 +73,23 @@
       margin-right:20px;
     }
 
-
-    .slide-in {
-      opacity:0;
-      transition:all .5s;
-    }
-
-    .navlink.slide-in {
-      transform:translateX(-30%) scale(0.95);
-    }
-
-    .slide-in.active {
-      opacity:1;
-      transform:translateX(0%) scale(1);
-    }
+@keyframes slide {
+	0%	 {right:0;}
+	100% {right:60px;}
+}
+.sociallinksslide{ 
+animation: slide 1s;
+position: relative;
+animation-duration: 1s;
+margin-right: 0px;
+animation-fill-mode: forwards;
+}
 
 .navlink {
 color: #55A6C1;
     font-size: 14px;
     font-family: Nexa-Bold;
+    margin-top: 4px;
 }
 
 a.navlink:hover {
