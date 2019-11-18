@@ -239,23 +239,24 @@ input::placeholder {
  *********************************************/
 
 .callout {
-	background-image: linear-gradient(179deg, #F5FBFE, #E0F0F6);
 	margin-top: 100px;
 }
 
 .houses {
-	max-width: 70%;
-	float: right;
+	max-width: 620px;
 	display: block;
+	margin-left: 90px;
+	margin-bottom: 100px;
 }
 
 .calloutbox {
 	max-width: 684px;
+	max-height: 459px;
 	background: #ffffff;
-	margin: 90px;
-    position: absolute;
     padding: 50px;
-    box-shadow: rgba(0, 0, 0, 0.098) 0px 1px 6px -1px;
+	box-shadow: 0 36px 43px 0 rgba(108,123,142,0.15);
+	margin-top: 56px;
+	margin-left: -56px;
 }
 
 .text-callout {
@@ -314,11 +315,18 @@ margin-top: 370px;
 /*********************************************
  * HOW DOES BRICK WORK
  *********************************************/
+.linebreak {
+	width: 80px;
+	border-bottom: 2px #F16E6A solid;
+	margin: 0 auto 30px;
+
+}
+
 .investmentheadertext {
 	color: #202D3B;
 	font-size: 35px;
 	font-family: Nexa-Bold;
-	text-align: left;
+	text-align: center;
 }
 
 .investmenttext {
@@ -326,10 +334,11 @@ margin-top: 370px;
 	font-size: 25px;
 	font-family: Nexa-Light;
 	margin-bottom: 20px;
-	text-align: left;
+	text-align: center;
 }
 
 .investmenttextbullet {
+	margin-left: 70px;
 	color: #202D3B;
 	font-size: 18px;
 	font-family: Nexa-Bold;
