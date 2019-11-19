@@ -482,17 +482,11 @@ display: block;
     margin: 30px auto 0px !important;
     font-size: 15px;
 }
-.houses {
-	margin-top: 300px;
-
-
-
-}
 
 @media only screen and (max-width: 960px) {
 .calloutbox {
     position: relative;
-    max-width: 444px;
+    max-width: 475px;
     margin: 0 auto;
     margin-top: -520px;
     height: 470px;
@@ -501,14 +495,14 @@ display: block;
 
 .investmentheadertext {
 	font-size: 36px;
-	max-width: 300px;
 }
 
 .investmenttext {
 	font-size: 20px;
-	max-width: 350px;
 }
-
+.investmenttextbullet {
+	margin-left: 30px;
+}
 .investmenttextbullet {
 	font-size: 14px;
 }
@@ -518,9 +512,17 @@ display: block;
 .footerlogoicon {
     max-width: 180px;
     }
+
+    .houses {
+    max-width: 100%;
+    display: block;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
 }
 @media only screen and (max-width: 768px) {
-	.houses {display: none;
+	.houses {
 	}
 
 
