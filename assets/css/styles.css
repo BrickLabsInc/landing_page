@@ -250,6 +250,7 @@ input::placeholder {
 	height: 570px;
 	width: 620px;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .calloutbox {
@@ -463,8 +464,29 @@ display: block;
 /*********************************************
  * MEDIA QUERIES
  *********************************************/
+@media only screen and (max-width: 1330px) {
+.calloutbox {
+    margin-left: -85px;
+    max-width: 600px;
+}
+.investmentheadertext{
+	 max-width: 321px;
+    margin: 0 auto 20px;
+}
+.investmenttext {
+	font-size: 20px;
+}
+.investmenttextbullet {
+	margin-left: 60px;
+}
+.investmenttextbullet {
+	font-size: 15px;
+}
+	}
+
+
 @media only screen and (max-width: 1200px) {
-	.headertextbox {
+.headertextbox {
     padding: 30px 50px 40px;
 }
 .headertext {
@@ -486,29 +508,33 @@ display: block;
     font-size: 15px;
 }
 
-@media only screen and (max-width: 960px) {
+.houses {
+    width: 550px;
+
+}
 .calloutbox {
-    position: relative;
-    max-width: 475px;
-    margin: 0 auto;
-    margin-top: -520px;
-    height: 470px;
+    margin-left: -100px;
+    max-width: 560px;
+    margin-top: 30px;
+    max-height: 440px;
 }
-
-
-.investmentheadertext {
-	font-size: 36px;
+.investmentheadertext{
+	 max-width: 321px;
+    margin: 0 auto 20px;
 }
-
 .investmenttext {
 	font-size: 20px;
 }
 .investmenttextbullet {
-	margin-left: 30px;
+	margin-left: 60px;
 }
 .investmenttextbullet {
-	font-size: 14px;
+	font-size: 15px;
 }
+}
+
+
+@media only screen and (max-width: 960px) {
 .callouttext {
 	margin-bottom: 50px;
 }
@@ -525,10 +551,13 @@ display: block;
 }
 }
 @media only screen and (max-width: 768px) {
-	.houses {
-	}
-
-
+	.calloutbox {
+	width: 100%;
+	max-width: 100%;
+	box-shadow: none;
+	margin: 0;
+	background: none;
+}
 .headertextbox {
 	margin: 0 auto 50px;
     position: relative;
@@ -559,7 +588,10 @@ display: block;
 }
 
 @media only screen and (max-width: 620px) {
+.houses {
+    height: 370px;
 
+}
 	.photohouses {
 		margin: 0;
 	}
@@ -593,12 +625,7 @@ display: block;
 .findlogo, .financelogo, .managelogo {
 	margin-right: 10px;
 }
-.calloutbox {
-	width: 100%;
-	box-shadow: none;
-	margin: 0;
-	background: none;
-}
+
 .copyrighttext {
     float: none;
     text-align: center;
