@@ -176,6 +176,7 @@ a.medium:hover {
 	float: right;
 	overflow: hidden;
 	margin-top: -77px;
+	background-image: url("../img/coverphoto.jpg");
 }
 
 div.a {
@@ -247,6 +248,7 @@ input::placeholder {
 	display: block;
 	margin-left: 90px;
 	margin-bottom: 100px;
+	background-image: url("../img/housephoto.jpg");
 }
 
 .calloutbox {
@@ -556,6 +558,11 @@ display: block;
 }
 
 @media only screen and (max-width: 620px) {
+
+	.photohouses {
+		margin: 0;
+	}
+
 	.logo {
     	width: 60px;
 	margin: 25px 30px;
