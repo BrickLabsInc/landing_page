@@ -132,6 +132,7 @@ a.medium:hover {
 	position: absolute;
 	margin: 4% 100px;
 	padding: 50px 80px 60px;
+	box-shadow: 0 6px 6px 0 rgba(108,123,142,0.05);
 }
 .headertext {
 	font-family: Nexa-Heavy;
@@ -167,15 +168,13 @@ a.medium:hover {
 
 
 .coverphoto {
-	padding: 0;
-	max-height: 580px;
-	overflow: hidden;
-}
-
-.photohouses {
-	float: right;
-	overflow: hidden;
-	margin-top: -77px;
+    padding: 0;
+    height: 580px;
+    overflow: hidden;
+    background: url(../img/coverphoto.jpg);
+    background-size: 100%;
+    background-position-y: -85px;
+    background-repeat: no-repeat;
 }
 
 div.a {
@@ -509,7 +508,7 @@ display: block;
 }
 
 .houses {
-    width: 550px;
+    max-width: 550px;
 
 }
 .calloutbox {
@@ -522,9 +521,7 @@ display: block;
 	 max-width: 321px;
     margin: 0 auto 20px;
 }
-.investmenttext {
-	font-size: 20px;
-}
+
 .investmenttextbullet {
 	margin-left: 60px;
 }
@@ -532,7 +529,12 @@ display: block;
 	font-size: 15px;
 }
 }
+@media only screen and (max-width: 1070px) {
+.calloutbox {
+	margin-left: -200px;
+}
 
+}
 
 @media only screen and (max-width: 960px) {
 .callouttext {
@@ -540,30 +542,31 @@ display: block;
 }
 .footerlogoicon {
     max-width: 180px;
-    }
-
-    .houses {
+    }.houses {
     max-width: 100%;
     display: block;
     margin-left: 0;
     margin-bottom: 0;
     margin-top: 20px;
+    width: 100%;
 }
-}
-@media only screen and (max-width: 768px) {
-	.calloutbox {
+.calloutbox {
 	width: 100%;
 	max-width: 100%;
 	box-shadow: none;
-	margin: 0;
+	margin: 0 0 60px;
 	background: none;
 }
+}
+@media only screen and (max-width: 768px) {
+
 .headertextbox {
 	margin: 0 auto 50px;
     position: relative;
     margin-top: -45%;
     height: 350px;
-}.headertext {
+}
+.headertext {
 	font-size: 26px; 
 
 }
@@ -584,16 +587,33 @@ display: block;
 .toprow {
 	margin: 0;
 }
-
+.investmenttextbullet {
+	margin: 0 auto;
+	width: 365px;
+}
+.investmenttext {
+	font-size: 20px;
+	max-width: 360px;
+	margin: 0 auto 20px;
+}
 }
 
 @media only screen and (max-width: 620px) {
+.coverphoto {
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
+}
+.headertextbox {
+    margin-top: -115%;
+}
 .houses {
     height: 370px;
 
 }
 	.photohouses {
 		margin: 0;
+		padding: 0;
 	}
 
 	.logo {
@@ -636,8 +656,7 @@ display: block;
     .footerlogoicon {
     	max-width: 250px;
     }
-    .investmenttextbullet {
-    font-size: 12px;}
+
 
 .sociallinksslide{ 
 animation: none;
