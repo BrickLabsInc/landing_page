@@ -169,14 +169,14 @@ a.medium:hover {
 
 .coverphoto {
     padding: 0;
-    height: 580px;
+    max-height: 580px;
     overflow: hidden;
-    background: url(../img/coverphoto.jpg);
-    background-size: 100%;
-    background-position-y: -85px;
-    background-repeat: no-repeat;
 }
+ .coverphotoimg {   width: 100%;
+    overflow: hidden;
+    margin-top: -108px;
 
+}
 div.a {
 	margin: 0 auto;
 }
@@ -600,12 +600,12 @@ display: block;
 
 @media only screen and (max-width: 620px) {
 .coverphoto {
-	width: 100%;
-	max-width: 100%;
+	width: 120%;
+	max-width: 150%;
 	padding: 0;
 }
 .headertextbox {
-    margin-top: -115%;
+    margin-top: -20%;
 }
 .houses {
     height: 370px;
