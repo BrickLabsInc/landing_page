@@ -588,10 +588,6 @@ display: block;
     margin: 0px;
     font-size: 12px;
 }
-
-.toprow {
-	margin: 0;
-}
 .investmenttextbullet {
 	margin: 0 auto;
 	width: 365px;
@@ -665,6 +661,16 @@ display: block;
 
 .sociallinksslide{ 
 animation: none;
+}
+
+.row {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.bkgrd1 {
+	padding-bottom: 30px;
 }
 }
 
