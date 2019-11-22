@@ -559,7 +559,7 @@ display: block;
 	width: 100%;
 	max-width: 100%;
 	box-shadow: none;
-	margin: 0 0 60px;
+	margin: 0;
 	background: none;
 	max-height: 520px;
 }
@@ -591,7 +591,8 @@ display: block;
 }
 .investmenttextbullet {
 	margin: 0 auto;
-	width: 365px;
+	max-width: 365px;
+	font-size: 11px;
 }
 .investmenttext {
 	font-size: 20px;
