@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Brick Main Site</title>
+    <title>Brick: Custom Home Savings Plans</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Nexa-Black.css">
@@ -32,7 +32,7 @@
 
 <body>
 
-    <section class="header">
+    <div class="header">
         <div class="row">
             <div class="col-md-12">
                 <img class="img-fluid d-inline logo" src="assets/img/bricklogored.svg"> 
@@ -40,20 +40,21 @@
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="https://medium.com/@BrickLabs" target="blank" class="nav-link"><img src="assets/img/medium.svg" class="medium"></a></li>
                         <li class="nav-item"><a href="https://twitter.com/brick_labs" target="blank" class="nav-link"><img src="assets/img/twitter.svg" class="twitter"></a></li>
-                        <li class="show nav-item"><a class="navlink" href="https://bricklabs.typeform.com/to/qyvyvX" target="blank">Get Your Plan Today
+                        <li class="show nav-item"><a class="buttonlink buttonnav btn btn-primary" href="https://bricklabs.typeform.com/to/qyvyvX" target="blank">Get Your Plan Today
                     </a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="bkgrd1">
+    <div class="bkgrd1">
         <div class="row toprow">
             <div class="col-md-4 col-lg-4 col-xl-4">
             </div>
-            <div class="col-md-8 col-lg-8 col-xl-8 coverphoto">
-                <img class="img-fluid flex-grow-1 photohouses" src="assets/img/coverphoto.jpg">
+            <div class="col-md-8 col-lg-8 col-xl-8 photohouses">
+                <div class="coverphoto">
+                    <img class="coverphotoimg" src="assets/img/coverphoto.jpg"></div>
             </div>
             <div class="headertextbox">
                     <p class="headertext">A Home Savings<br>Plan Built For You.<br><span>Preparing to Buy a Home<br>Shouldn’t Be Complicated. </span></p>
@@ -62,9 +63,9 @@
                     </a>
                 </div>
         </div>
-    </section>
+    </div>
 
-    <section class="howbrickworks"> 
+    <div class="howbrickworks"> 
         <div class="row">
             <div class="col-md-12">
                 <p class="text-center callouttitle">How Brick Works</p>
@@ -94,13 +95,15 @@
                 <p class="text-center callouttext managetext">While your savings plan grows, Brick teaches you about owning real estate and guides you through your personal buying process.</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="callout">
+    <div class="callout">
         <div class="row">
-            <img class="img-fluid d-xl-flex houses" src="assets/img/housebackgroundimg.png">
+            <div class="houses"></div>
+             
             <div class="col-md-12 calloutbox">
                 <p class="investmentheadertext">Buying a Home is a Big Investment</p>
+                <div class="linebreak"></div>
                 <p class="investmenttext">Brick helps you become a better prepared buyer with custom real estate investment plans that:</p>
                 <ul class="investmenttextbullet">
                     <li><img class="financelogo" src="assets/img/financelogo.svg">Accelerate your savings </li>
@@ -109,16 +112,16 @@
                 </ul>
             </div>
         </div>
-    </section>   
+    </div>   
 
     
-    <section class="footer">
+    <div class="footer">
         <div class="row">
             <div class="col-md-12 footerlogo">
                 <img class="img-fluid footerlogoicon" src="assets/img/bricklogofooter.svg">
             </div>
         <p class="copyrighttext">© 2019 Brick Labs, Inc.</p>
-    </section>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -144,6 +147,19 @@
         } else {
             //remove the background property so it comes transparent again (defined in your css)
            $(".show").removeClass("shownow");
+        }
+    });
+});
+
+</script>
+<script>
+    $(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 50) {
+            $(".sociallinks").addClass("sociallinksslide");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".sociallinks").removeClass("sociallinksslide");
         }
     });
 });

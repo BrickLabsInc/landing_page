@@ -44,11 +44,12 @@
 
 .navbar-nav {
 	display: block;
-	margin-top:25px;
+	margin-top: 13px;
 }
 
 .twitter{
 	height: 16px;
+	margin-top: 12px;
 	display: block;
 }
 
@@ -59,6 +60,7 @@
 .medium{
 	height: 16px;
 	display: block;
+	margin-top: 12px;
 }
 
 .show {
@@ -68,11 +70,50 @@
 	display: block;
 	margin-top: 4px;
 }
+.buttonnav {
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    background-size: 200% 100%;
+    border: none;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: 14px 20px 10px;
+    color: #ffffff !import;background-image: linear-gradient(297deg, #e05c58, #F16F6B);
+    border-radius: 100px !important;
+    font-family: Nexa-Book;
+    font-size: 14px;
+}
+a.buttonnav:hover {
+	background-image: linear-gradient(297deg, #F16F6B, #F16F6B);
+}
+   .navlink {
+      float:left;
+      margin-right:20px;
+    }
+
+@keyframes slide {
+	0%	 {right:0;}
+	100% {right:80px;}
+}
+.sociallinksslide{ 
+animation: slide 1s;
+position: relative;
+animation-duration: 1s;
+margin-right: 0px;
+animation-fill-mode: forwards;
+}
 
 .navlink {
 color: #55A6C1;
     font-size: 14px;
     font-family: Nexa-Bold;
+    margin-top: 4px;
 }
 
 a.navlink:hover {
@@ -91,6 +132,7 @@ a.medium:hover {
 	position: absolute;
 	margin: 4% 100px;
 	padding: 50px 80px 60px;
+	box-shadow: 0 6px 6px 0 rgba(108,123,142,0.05);
 }
 .headertext {
 	font-family: Nexa-Heavy;
@@ -123,20 +165,23 @@ a.medium:hover {
 	text-align: center;
 	margin-top: 30px;
 }
+.photohouses {
+    width: 100%;
+    overflow: hidden;
+    padding:0;
+}
 
 
 .coverphoto {
-	padding: 0;
-	max-height: 580px;
-	overflow: hidden;
+    padding: 0;
+    max-height: 580px;
+    overflow: hidden;
 }
+ .coverphotoimg {   width: 100%;
+    overflow: hidden;
+    margin-top: -108px;
 
-.photohouses {
-	float: right;
-	overflow: hidden;
-	margin-top: -77px;
 }
-
 div.a {
 	margin: 0 auto;
 }
@@ -198,21 +243,28 @@ input::placeholder {
  *********************************************/
 
 .callout {
-	background-image: linear-gradient(179deg, #F5FBFE, #E0F0F6);
 	margin-top: 100px;
 }
 
 .houses {
-	margin: 250px -15px 0;
+	display: block;
+	margin-left: 90px;
+	margin-bottom: 100px;
+	background-image: url("../img/housephoto.jpg");
+	height: 570px;
+	width: 620px;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .calloutbox {
 	max-width: 684px;
+	max-height: 459px;
 	background: #ffffff;
-	margin: 90px;
-    position: absolute;
     padding: 50px;
-    box-shadow: rgba(0, 0, 0, 0.098) 0px 1px 6px -1px;
+	box-shadow: 0 36px 43px 0 rgba(108,123,142,0.15);
+	margin-top: 56px;
+	margin-left: -56px;
 }
 
 .text-callout {
@@ -222,6 +274,10 @@ input::placeholder {
  	margin: 90px auto 0;
  	font-family: Nexa-Book;
  	line-height: 50px;
+}
+
+.margintop {
+margin-top: 370px;
 }
 
 .text-callout span {
@@ -234,7 +290,7 @@ input::placeholder {
 
 .calloutheadertext {
 	color: #202D3B;
-	font-size: 35px;
+	font-size: 34px;
 	font-family: Nexa-Bold;
 	margin-bottom: 50px;
 }
@@ -267,11 +323,18 @@ input::placeholder {
 /*********************************************
  * HOW DOES BRICK WORK
  *********************************************/
+.linebreak {
+	width: 80px;
+	border-bottom: 2px #F16E6A solid;
+	margin: 0 auto 30px;
+
+}
+
 .investmentheadertext {
 	color: #202D3B;
-	font-size: 35px;
+	font-size: 34px;
 	font-family: Nexa-Bold;
-	text-align: left;
+	text-align: center;
 }
 
 .investmenttext {
@@ -279,10 +342,11 @@ input::placeholder {
 	font-size: 25px;
 	font-family: Nexa-Light;
 	margin-bottom: 20px;
-	text-align: left;
+	text-align: center;
 }
 
 .investmenttextbullet {
+	margin-left: 70px;
 	color: #202D3B;
 	font-size: 18px;
 	font-family: Nexa-Bold;
@@ -404,8 +468,29 @@ display: block;
 /*********************************************
  * MEDIA QUERIES
  *********************************************/
+@media only screen and (max-width: 1330px) {
+.calloutbox {
+    margin-left: -85px;
+    max-width: 600px;
+}
+.investmentheadertext{
+	 max-width: 321px;
+    margin: 0 auto 20px;
+}
+.investmenttext {
+	font-size: 20px;
+}
+.investmenttextbullet {
+	margin-left: 60px;
+}
+.investmenttextbullet {
+	font-size: 15px;
+}
+	}
+
+
 @media only screen and (max-width: 1200px) {
-	.headertextbox {
+.headertextbox {
     padding: 30px 50px 40px;
 }
 .headertext {
@@ -426,54 +511,68 @@ display: block;
     margin: 30px auto 0px !important;
     font-size: 15px;
 }
+
 .houses {
-	margin-top: 300px;
+    max-width: 550px;
+
+}
+.calloutbox {
+    margin-left: -100px;
+    max-width: 560px;
+    margin-top: 30px;
+    max-height: 440px;
+}
+.investmentheadertext{
+	 max-width: 321px;
+    margin: 0 auto 20px;
 }
 
+.investmenttextbullet {
+	margin-left: 60px;
+}
+.investmenttextbullet {
+	font-size: 15px;
+}
+}
+@media only screen and (max-width: 1070px) {
+.calloutbox {
+	margin-left: -200px;
+}
 
 }
 
 @media only screen and (max-width: 960px) {
-.calloutbox {
-    position: relative;
-    max-width: 444px;
-    margin: 0 auto;
-    margin-top: -520px;
-    height: 470px;
-}
-
-
-.investmentheadertext {
-	font-size: 36px;
-	max-width: 300px;
-}
-
-.investmenttext {
-	font-size: 20px;
-	max-width: 350px;
-}
-
-.investmenttextbullet {
-	font-size: 14px;
-}
 .callouttext {
 	margin-bottom: 50px;
 }
 .footerlogoicon {
     max-width: 180px;
-    }
+    }.houses {
+    max-width: 100%;
+    display: block;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+.calloutbox {
+	width: 100%;
+	max-width: 100%;
+	box-shadow: none;
+	margin: 0;
+	background: none;
+	max-height: 520px;
+}
 }
 @media only screen and (max-width: 768px) {
-	.houses {display: none;
-	}
-
 
 .headertextbox {
 	margin: 0 auto 50px;
     position: relative;
     margin-top: -45%;
     height: 350px;
-}.headertext {
+}
+.headertext {
 	font-size: 26px; 
 
 }
@@ -490,14 +589,36 @@ display: block;
     margin: 0px;
     font-size: 12px;
 }
-
-.toprow {
-	margin: 0;
+.investmenttextbullet {
+	margin: 0 auto;
+	max-width: 365px;
+	font-size: 11px;
 }
-
+.investmenttext {
+	font-size: 20px;
+	max-width: 360px;
+	margin: 0 auto 20px;
+}
 }
 
 @media only screen and (max-width: 620px) {
+.coverphoto {
+	width: 120%;
+	max-width: 150%;
+	padding: 0;
+}
+.headertextbox {
+    margin-top: -20%;
+}
+.houses {
+    height: 370px;
+
+}
+	.photohouses {
+		margin: 0;
+		padding: 0;
+	}
+
 	.logo {
     	width: 60px;
 	margin: 25px 30px;
@@ -527,12 +648,7 @@ display: block;
 .findlogo, .financelogo, .managelogo {
 	margin-right: 10px;
 }
-.calloutbox {
-	width: 100%;
-	box-shadow: none;
-	margin: 0;
-	background: none;
-}
+
 .copyrighttext {
     float: none;
     text-align: center;
@@ -543,8 +659,21 @@ display: block;
     .footerlogoicon {
     	max-width: 250px;
     }
-    .investmenttextbullet {
-    font-size: 12px;}
+
+
+.sociallinksslide{ 
+animation: none;
+}
+
+.row {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.bkgrd1 {
+	padding-bottom: 30px;
+}
 }
 
 /*@media only screen and (max-width: 1439px) {
