@@ -675,246 +675,386 @@ animation: none;
 	padding-bottom: 30px;
 }
 }
+/*********************************************
+ * Website Scroll
+ *********************************************/
 
+* {
+margin: 0px;
+padding: 0px;
+font-weight: 200;
+font-family: helvetica neue, helvetica, arial, sans-serif;
+-webkit-font-smoothing: antialiased;
+}
+
+a{color: #000; text-decoration: none;}
+a:hover{color: #000; text-decoration: none;}
+
+body {
+background: #fafafa;
+}  
+
+.container {
+width: 100%;
+height: 50px;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-left: -25%;
+margin-top: -25px;
+}
+
+p {
+float: left; 
+line-height: 50px;
+font-size: 200%;
+color: #888;
+}
+
+.scroller {
+height: 50px;
+line-height: 50px;
+float: left;
+margin-left: 5px;
+overflow: hidden;
+}
+
+.scroller span {
+display: block; 
+font-size: 200%;
+color: #000;
+}
+
+.scroller .inner {
+-webkit-animation: scroll 10s 1 ease-out;
+-moz-animation: scroll 10s 1 ease-out;
+animation: scroll 10s 1 ease-out;
+-webkit-animation-fill-mode: forwards;
+-moz-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+}
+
+
+.blue {
+-webkit-animation: color 0.25s 1 linear;
+-moz-animation: color 0.25s 1 linear;
+animation: color 0.25s 1 linear;
+
+	-webkit-animation-delay: 8s;
+-moz-animation-delay: 8s;
+animation-delay: 8s;
+
+	-webkit-animation-fill-mode: forwards;
+-moz-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+
+}
+
+
+.blueb {
+-webkit-animation: color 0.25s 1 linear;
+-moz-animation: color 0.25s 1 linear;
+animation: color 0.25s 1 linear;
+
+		-webkit-animation-delay: 8.25s;
+-moz-animation-delay: 8.25s;
+animation-delay: 8.25s;
+
+	-webkit-animation-fill-mode: forwards;
+-moz-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes color {
+0%  {color: #000;}
+100% {color: #2c90c6;}
+}
+
+@-moz-keyframes color {
+0%  {color: #000;}
+100% {color: #2c90c6;}
+}
+
+@keyframes color {
+0%  {color: #000;}
+100% {color: #2c90c6;}
+}
+
+@-webkit-keyframes scroll {
+11%  {margin-top: 0px;}
+22%  {margin-top: 0px;}
+33%  {margin-top: -50px;}
+44%  {margin-top: -50px;}
+55%  {margin-top: -100px;}
+66%  {margin-top: -100px;}
+77%  {margin-top: -150px;}
+88%  {margin-top: -150px;}
+100% {margin-top: -150px;}
+}
+
+@-moz-keyframes scroll {
+11%  {margin-top: 0px;}
+22%  {margin-top: 0px;}
+33%  {margin-top: -50px;}
+44%  {margin-top: -50px;}
+55%  {margin-top: -100px;}
+66%  {margin-top: -100px;}
+77%  {margin-top: -150px;}
+88%  {margin-top: -150px;}
+100% {margin-top: -150px;}
+}
+
+@keyframes scroll {
+11%  {margin-top: 0px;}
+22%  {margin-top: 0px;}
+33%  {margin-top: -50px;}
+44%  {margin-top: -50px;}
+55%  {margin-top: -100px;}
+66%  {margin-top: -100px;}
+77%  {margin-top: -150px;}
+88%  {margin-top: -150px;}
+100% {margin-top: -150px;}
+}
 /*@media only screen and (max-width: 1439px) {
 
-	.headertext {
-		font-size: 2.4em;
-	}
+.headertext {
+	font-size: 2.4em;
+}
 
-	.footerlogo {
-		flex: none;
-		width: 100%;
-		max-width: 100%;
-		margin: 0 auto 40px;
-	}
+.footerlogo {
+	flex: none;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto 40px;
+}
 
-	.footerlogoicon {
-		margin: 0 auto;
-	}
+.footerlogoicon {
+	margin: 0 auto;
+}
 
-	.copyrighttext {
-		margin: 0 auto 20px;
-		text-align: center;
-	}
+.copyrighttext {
+	margin: 0 auto 20px;
+	text-align: center;
+}
 
-	.footer {
-	    padding: 20px;
-	    text-align: center;
-	    margin: 0 auto;
-	}
+.footer {
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
 
-	.footerlogoicon {
-	    max-width: 252px;
-	    margin: 20px auto 0px;
+.footerlogoicon {
+	max-width: 252px;
+	margin: 20px auto 0px;
 
-	}
+}
 
-	.footerbrick, .footerblog, .footersocial {
-	 	max-width: 100%;
-	 	margin: 0 auto;
-	 	text-align: center;
-	}
+.footerbrick, .footerblog, .footersocial {
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
 
-	.footerlogo {
-		max-width: 100%;
-		margin: 0 auto 20px;
-	}
+.footerlogo {
+	max-width: 100%;
+	margin: 0 auto 20px;
+}
 
-	.textcenter {
-		margin: 0;
-		padding: 0 ;
-	}
+.textcenter {
+	margin: 0;
+	padding: 0 ;
+}
 
-	.footerheadline {
-		margin-top: 20px;
-	}
+.footerheadline {
+	margin-top: 20px;
+}
 
-	.facebook, .medium, .twitter {
-		margin: 15px;
-		padding: 0;
-	}
+.facebook, .medium, .twitter {
+	margin: 15px;
+	padding: 0;
+}
 }
 
 @media only screen and (max-width: 1300px) {
-	.headertext {
-			font-size: 2.2em;
-	}
-	
-	.tagline {
-		font-size: .7em;
-	}
+.headertext {
+		font-size: 2.2em;
+}
+
+.tagline {
+	font-size: .7em;
+}
 }
 
 @media only screen and (max-width: 1200px) {
-	
-    .topcontent {
-		 padding: 40px 60px;
-	}
 
-	.emailinput {
-    	margin: -12% 40px 0;
-    }
+.topcontent {
+		padding: 40px 60px;
+}
 
-	.logo {
-	    width: 70px;
-	    margin-bottom: 40px;
-	}
+.emailinput {
+	margin: -12% 40px 0;
+}
 
-	.forminput {
-		height: 60px;
-	}
+.logo {
+	width: 70px;
+	margin-bottom: 40px;
+}
 
-	.button {
-		height: 40px;
-		font-size: 13px;
-	}
+.forminput {
+	height: 60px;
+}
 
-	.headertext {
-		font-size: 2em;
-	}
+.button {
+	height: 40px;
+	font-size: 13px;
+}
 
-	.tagline { 
-		font-size: .7em;
-	}
+.headertext {
+	font-size: 2em;
+}
 
-	.house { 
-		margin-top: -5px;
-	}
+.tagline { 
+	font-size: .7em;
+}
 
-	.text-callout {
-	    font-size: 22px;
-	    line-height: 40px;
-	    margin: 50px auto 0;
-	}
+.house { 
+	margin-top: -5px;
+}
 
-	.footerlogoicon {
-	    max-width: 252px;
-	}
+.text-callout {
+	font-size: 22px;
+	line-height: 40px;
+	margin: 50px auto 0;
+}
 
-	.footer {
-	    padding: 50px 60px 10px;
-	}
+.footerlogoicon {
+	max-width: 252px;
+}
 
-	input::placeholder {
-	  font-size: 13px;
-	}
+.footer {
+	padding: 50px 60px 10px;
+}
+
+input::placeholder {
+	font-size: 13px;
+}
 }
 
 @media only screen and (max-width: 960px) {
 
-	.calloutheadertext {
-	    font-size: 32px;
-	    margin: 40px 0px 0px;
-	}
+.calloutheadertext {
+	font-size: 32px;
+	margin: 40px 0px 0px;
+}
 
-	.calloutlabel {
-		margin-top: 40px;
-		font-size: 16px;
-	}
+.calloutlabel {
+	margin-top: 40px;
+	font-size: 16px;
+}
 
 
-	.text-callout {
-		max-width: 90%;
-	}
+.text-callout {
+	max-width: 90%;
+}
 
-	.headertext {
-		font-size: 1.7em;
-	}
+.headertext {
+	font-size: 1.7em;
+}
 
-	.tagline {
-		font-size: .6em;
-	}
+.tagline {
+	font-size: .6em;
+}
 }
 
 
 @media only screen and (max-width: 830px) {
-	.coverphoto {
-	    overflow: hidden;
-	}
+.coverphoto {
+	overflow: hidden;
+}
 
-	.headertext {
-		font-size: 1.4em;
-	}
+.headertext {
+	font-size: 1.4em;
+}
 
-	.emailinput {
-	    max-width: 90%;
-	    float: left;
-	    margin: -30% auto 0px;
-	}
+.emailinput {
+	max-width: 90%;
+	float: left;
+	margin: -30% auto 0px;
+}
 
-	.photohouses {
-		margin-top: -170px;
-		max-height: 580px;
-	}
+.photohouses {
+	margin-top: -170px;
+	max-height: 580px;
+}
 
-	.topcontent {
-		width: 100%;
-		max-width: 100%;
-		flex: none;
-	}
+.topcontent {
+	width: 100%;
+	max-width: 100%;
+	flex: none;
+}
 
-	.coverphoto {
-		flex: none;
-		width: 100%;
-		max-width: 100%;
-		max-height: 200px;
-		margin-top: -10px;
-	}
+.coverphoto {
+	flex: none;
+	width: 100%;
+	max-width: 100%;
+	max-height: 200px;
+	margin-top: -10px;
+}
 
-	.headertext { 
-		text-align: center;
-		font-size: 2em;
-	}
+.headertext { 
+	text-align: center;
+	font-size: 2em;
+}
 
-	.tagline {
-		font-size: .7em;
-		text-align: center;
-		margin: 10px auto 30px;
-		max-width: 90%;
-	}
+.tagline {
+	font-size: .7em;
+	text-align: center;
+	margin: 10px auto 30px;
+	max-width: 90%;
+}
 
-	.logo {
-    	width: 70px;
-    	margin-bottom: 40px;
-	}
+.logo {
+	width: 70px;
+	margin-bottom: 40px;
+}
 }
 
 @media only screen and (max-width: 620px) {
 
-	.emailinput {
-    	max-width: 90%;
-    	float: left;
-    	margin: -50% auto 0px;
-	}
+.emailinput {
+	max-width: 90%;
+	float: left;
+	margin: -50% auto 0px;
+}
 
-	.text-callout {
-    	font-size: 16px;
-    	line-height: 30px;
-    	margin: 50px auto 0;
-	}
+.text-callout {
+	font-size: 16px;
+	line-height: 30px;
+	margin: 50px auto 0;
+}
 
-	.house {
-	    margin-top: 5px;
-	}
+.house {
+	margin-top: 5px;
+}
 
-	.row {
-		margin: 0;
-	}
+.row {
+	margin: 0;
+}
 
-	.emailsignup {
-		padding: 20px;
-	}
+.emailsignup {
+	padding: 20px;
+}
 
-	.button {
-		padding: 0 20px;
-	    margin-left: -175px;
-	    font-size: 14px;
-	}
+.button {
+	padding: 0 20px;
+	margin-left: -175px;
+	font-size: 14px;
+}
 
-	.forminput {
-		padding:0;
-	}
+.forminput {
+	padding:0;
+}
 }
 
 @media only screen and (max-width: 500px) {
